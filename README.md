@@ -1,4 +1,4 @@
-<div align="center" id="top"> 
+<div align="center" id="top">
   <!-- <img src="./.github/app.gif" alt="Ignite" /> -->
 
 &#xa0;
@@ -6,7 +6,7 @@
   <!-- <a href="https://ignite.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">NLW E-Sports Ignite</h1>
+<h1 align="center">Server App</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/AlexMarquesAlves/ignite?color=56BEB8">
@@ -27,13 +27,13 @@
 Status
 
 <h4 align="center">
-	🚧 NLW E-Sports Ignite 🚀 Under construction...  🚧
+	🚧 Server App 🚀 Under construction...  🚧
 </h4>
 
 <hr>
 
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;
   <!-- <a href="#sparkles-features">Features</a> &#xa0; | &#xa0; -->
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
@@ -58,17 +58,15 @@ Describe your project
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
 - [Express](https://expressjs.com/pt-br/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [Sass](https://sass-lang.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [React Native](https://reactnative.dev/)
 
 ## :white_check_mark: Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com)
+and [Node](https://nodejs.org/en/) installed.
 
 ## :checkered_flag: Starting
 
@@ -90,9 +88,11 @@ $ yarn start
 
 ## :memo: License
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from MIT. For more details, see the
+[LICENSE](LICENSE.md) file.
 
-Made with :heart: by <a href="https://github.com/AlexMarquesAlves" target="_blank">¡Duque</a>
+Made with :heart: by
+<a href="https://github.com/AlexMarquesAlves" target="_blank">¡Duque</a>
 
 &#xa0;
 
