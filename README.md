@@ -17,11 +17,11 @@
 
   <img alt="License" src="https://img.shields.io/github/license/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF" /> -->
+  <img alt="Github issues" src="https://img.shields.io/github/issues/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF" />
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF" /> -->
+  <img alt="Github forks" src="https://img.shields.io/github/forks/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF" />
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF" /> -->
+  <img alt="Github stars" src="https://img.shields.io/github/stars/AlexMarquesAlves/nlw-e_sports-ignite-server?color=9A35FF" />
 </p>
 
 Status
@@ -72,10 +72,10 @@ and [Node](https://nodejs.org/en/) installed.
 
 ```bash
 # Clone this project
-$ git clone https://github.com/AlexMarquesAlves/ignite
+$ git clone https://github.com/AlexMarquesAlves/nlw-e_sports-ignite-server
 
 # Access
-$ cd ignite
+$ cd nlw-e_sports-ignite-server
 
 # Install dependencies
 $ yarn
