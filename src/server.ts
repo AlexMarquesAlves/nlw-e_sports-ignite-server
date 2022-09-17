@@ -22,6 +22,22 @@ app.get('/games', async (req, res) => {
 });
 
 app.post('/games/:id/ads', async (req, res) => {
+  const gameId = req.params.id;
+  const body = req.body;
+
+  const ad = await prisma.ad.create({
+    data: {
+      gameId,
+      name: body.name,
+      yearsPlaying: body.yearsPlaying,
+      discord: body.discord,
+      weekDays: body.weekDays,
+      hoursStart: body.hoursStart,
+      hoursEnd: body.hoursEnd,
+      useVoiceChannel: body.useVoiceChannel,
+    },
+  });
+
   return res.status(201).json([body]);
 });
 
