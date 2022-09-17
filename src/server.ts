@@ -2,6 +2,9 @@ import { PrismaClient } from '@prisma/client';
 import express, { query } from 'express';
 
 const app = express();
+
+app.use(express.json());
+
 const prisma = new PrismaClient({
   log: ['query'],
 });
@@ -18,8 +21,8 @@ app.get('/games', async (req, res) => {
   return res.json([games]);
 });
 
-app.post('/ads', (req, res) => {
-  return res.status(201).json([]);
+app.post('/games/:id/ads', async (req, res) => {
+  return res.status(201).json([body]);
 });
 
 app.get('/games/:id/ads', async (req, res) => {
@@ -53,16 +56,7 @@ app.get('/games/:id/ads', async (req, res) => {
   );
 });
 
-app.get('/ads/:id/discord', (req, res) => {
-  // const adId = req.params.id;
-
-  return res.json([
-    { id: 1, name: 'Anuncio 1' },
-    { id: 2, name: 'Anuncio 2' },
-    { id: 3, name: 'Anuncio 3' },
-    { id: 4, name: 'Anuncio 4' },
-  ]);
-});
+app.get('/ads/:id/discord', async (req, res) => {});
 
 // Server listen
 app.listen(3333);
