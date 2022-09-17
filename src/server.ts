@@ -43,7 +43,14 @@ app.get('/games/:id/ads', async (req, res) => {
     },
   });
 
-  return res.json([ads]);
+  return res.json(
+    ads.map((ad) => {
+      return {
+        ...ad,
+        weekDays: ad.weekDays.split(','),
+      };
+    }),
+  );
 });
 
 app.get('/ads/:id/discord', (req, res) => {
