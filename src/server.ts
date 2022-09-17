@@ -38,6 +38,9 @@ app.get('/games/:id/ads', async (req, res) => {
     where: {
       gameId,
     },
+    orderBy: {
+      createdAt: 'desc',
+    },
   });
 
   return res.json([ads]);
