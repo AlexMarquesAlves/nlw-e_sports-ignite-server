@@ -1,19 +1,21 @@
 import { PrismaClient } from '@prisma/client';
-import express from 'express';
+import express, { query } from 'express';
 
 const app = express();
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({
+  log: ['query'],
+});
 
-// HTTP methods / API RESTful / HTTP Codes
+app.get('/games', async (req, res) => {
+  const games = await prisma.game.findMany({
+    include: {
+      _count: {
+        select: { ads: true },
+      },
+    },
+  });
 
-/**
- * Query: ...
- * Route: ...
- * Body: ...
- */
-
-app.get('/games', (req, res) => {
-  return res.json([]);
+  return res.json([games]);
 });
 
 app.post('/ads', (req, res) => {
@@ -44,3 +46,11 @@ app.get('/ads/:id/discord', (req, res) => {
 
 // Server listen
 app.listen(3333);
+
+// HTTP methods / API RESTful / HTTP Codes
+
+/**
+ * Query: ...
+ * Route: ...
+ * Body: ...
+ */
