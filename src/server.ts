@@ -22,15 +22,16 @@ app.post('/ads', (req, res) => {
   return res.status(201).json([]);
 });
 
-app.get('/games/:id/ads', (req, res) => {
-  // const gameId = req.params.id;
+app.get('/games/:id/ads', async (req, res) => {
+  const gameId = req.params.id;
 
-  return res.json([
-    { id: 1, name: 'Anuncio 1' },
-    { id: 2, name: 'Anuncio 2' },
-    { id: 3, name: 'Anuncio 3' },
-    { id: 4, name: 'Anuncio 4' },
-  ]);
+  const ads = await prisma.ad.findMany({
+    where: {
+      gameId,
+    },
+  });
+
+  return res.json([ads]);
 });
 
 app.get('/ads/:id/discord', (req, res) => {
